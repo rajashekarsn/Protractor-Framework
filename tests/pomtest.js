@@ -12,7 +12,7 @@ describe('Protractor Demo App', function() {
         homepage.clickGO();
         homepage.verifyResult('3');
         //   expect(element(by.binding('latest')).getText()).
-        //       toEqual('5'); // This will fail. Change to 3, to pass.
+        //       toEqual('3); 
     });
 
 });
