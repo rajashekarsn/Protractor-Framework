@@ -10,6 +10,8 @@ describe('Protractor Demo App', function() {
         homepage.secondNumber('2');
         //   element(by.id('gobutton')).click();
         homepage.clickGO();
+        browser.sleep(10000);
+        // homepage.sleep(2000);
         homepage.verifyResult('3');
         //   expect(element(by.binding('latest')).getText()).
         //       toEqual('3); 

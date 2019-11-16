@@ -9,14 +9,21 @@
 // });
 
 exports.config = {
-  directConnect: true, //comment to run on selenium server
+  // directConnect: true, //comment to run on selenium server
   framework: 'jasmine',
-  // seleniumAddress: 'http://localhost:4444/wd/hub', //comment to run directly and uncomment -directConnect: true 
-  specs: ['../tests/dataDrivenExcel.js'],
- 
+  seleniumAddress: 'http://localhost:4723/wd/hub', //comment to run directly and uncomment -directConnect: true , 4723 - android
+  specs: ['../tests/pomtest.js'],
+
   // Capabilities to be passed to the Webdriver Instance.
   capabilities: {
-    browserName: 'firefox',
+    chromedriverExecutable: '/home/shanmukh/Documents/chrome62driver/chromedriver',
+    browserName: 'chrome',
+    // 'appium-version':'1.15.1',
+    platformName:'Android',
+    // platformVersion:'6.0.1 MMB29M',
+    // deviceName: 'emulator-5554',
+    skipServerInstallation:'true',
+    deviceName: '0123456789',
   }, 
 
   // // to run multiple browsers
